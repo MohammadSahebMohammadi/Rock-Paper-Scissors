@@ -1,10 +1,11 @@
 import java.util.Scanner;
 public class Main {
-    Scanner sc = new Scanner(System.in);
+
     public static void main(String[] args) {
-        System.out.println("Enter your move ( rock , paper , scissor ) :");
-        
-        //scan
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter your move ( rock , paper , scissor ) : ");
+
+        String playermove = sc.nextLine();
 
         // cumputer choise
 
