@@ -25,7 +25,43 @@ public class Main {
 
         System.out.println("computer move = " + computermove_s );
 
-        // you win or you lose
+
+        switch (computermove_i) {
+            case 0:
+                if(playermove.equals("rock")) {
+                    System.out.println("Equal.");
+                }
+                else if(playermove.equals("paper")){
+                    System.out.println("you win.");
+                }
+                else if(playermove.equals("scissor")){
+                    System.out.println("you lose.");
+                }
+                break;
+            case 1:
+                if(playermove.equals("rock")) {
+                    System.out.println("you lose.");
+                }
+                else if(playermove.equals("paper")){
+                    System.out.println("Equal.");
+                }
+                else if(playermove.equals("scissor")){
+                    System.out.println("you win.");
+                }
+                break;
+            case 2:
+                if(playermove.equals("rock")) {
+                    System.out.println("you win.");
+                }
+                else if(playermove.equals("paper")){
+                    System.out.println("you lose.");
+                }
+                else if(playermove.equals("scissor")){
+                    System.out.println("Equal.");
+                }
+                break;
+        }
+
 
         //play again (yes/no) :
 
