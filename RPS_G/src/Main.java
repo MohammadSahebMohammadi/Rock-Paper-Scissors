@@ -13,6 +13,7 @@ public class Main {
             String playermove = null ;
 
             do {
+                Helper.newGameLine();
                 System.out.print("Enter your move ( rock , paper , scissor ) : ");
                 playermove = sc.nextLine();
             }while ( !(playermove.equals("rock") || playermove.equals("scissor") || playermove.equals("paper")) );
@@ -33,40 +34,42 @@ public class Main {
 
             System.out.println("computer move = " + computermove_s);
 
-
+            System.out.print("\n\t__");
             switch (computermove_i) {
                 case 0:
                     if (playermove.equals("rock")) {
-                        System.out.println("Equal.");
+                        System.out.print("Equal.");
                     } else if (playermove.equals("paper")) {
-                        System.out.println("you win.");
+                        System.out.print("you win.");
                     } else if (playermove.equals("scissor")) {
-                        System.out.println("you lose.");
+                        System.out.print("you lose.");
                     }
                     break;
                 case 1:
                     if (playermove.equals("rock")) {
-                        System.out.println("you lose.");
+                        System.out.print("you lose.");
                     } else if (playermove.equals("paper")) {
-                        System.out.println("Equal.");
+                        System.out.print("Equal.");
                     } else if (playermove.equals("scissor")) {
-                        System.out.println("you win.");
+                        System.out.print("you win.");
                     }
                     break;
                 case 2:
                     if (playermove.equals("rock")) {
-                        System.out.println("you win.");
+                        System.out.print("you win.");
                     } else if (playermove.equals("paper")) {
-                        System.out.println("you lose.");
+                        System.out.print("you lose.");
                     } else if (playermove.equals("scissor")) {
-                        System.out.println("Equal.");
+                        System.out.print("Equal.");
                     }
                     break;
             }
+            System.out.println("__\n");
 
 
             System.out.println("play again (yes,no) : ");
             isplayagain = sc.nextLine();
+
         }while(isplayagain.equals("yes"));
 
     }
