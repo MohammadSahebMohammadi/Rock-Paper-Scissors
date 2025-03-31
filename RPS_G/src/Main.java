@@ -10,9 +10,12 @@ public class Main {
         do {
 
             isplayagain = null;
+            String playermove = null ;
 
-            System.out.print("Enter your move ( rock , paper , scissor ) : ");
-            String playermove = sc.nextLine();
+            do {
+                System.out.print("Enter your move ( rock , paper , scissor ) : ");
+                playermove = sc.nextLine();
+            }while ( !(playermove.equals("rock") || playermove.equals("scissor") || playermove.equals("paper")) );
 
             int computermove_i = rand.nextInt(3);
             String computermove_s = null;
